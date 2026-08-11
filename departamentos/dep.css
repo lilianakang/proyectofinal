@@ -1,0 +1,111 @@
+css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/departamentos/op1.jpg);
+  
+  color: #333;
+  font-family: "Elms Sans", sans-serif;
+}
+
+#contenedor {
+  max-width: 550px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.volver {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #402912;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Unbounded', sans-serif;
+  color: #3a2a11;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#contenedor > p {
+  margin-bottom: 15px;
+  color: #9e8b78;
+}
+
+#area-controles {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#deptoselect {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+#btnlimpiar {
+  background-color: #735b5b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#btnlimpiar:hover {
+  background-color: #4a3333;
+}
+
+#infocard {
+  background-color: #f4e4ea;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#deptoimagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #ccc; 
+}
+
+#deptonombre {
+  color: #42281b;
+  margin-bottom: 10px;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#infocard p {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  #contenedor {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #area-controles {
+    flex-direction: column;
+  }
+}

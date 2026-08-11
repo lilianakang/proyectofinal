@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url(/fondo.jpg);
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #6a975d;
+  color: white;
+  padding: 40px 20px;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+    font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 10px 10px;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card button {
+  background-color: #6a975d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card button:hover {
+  background-color: #14352a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
